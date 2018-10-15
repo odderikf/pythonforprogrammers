@@ -24,7 +24,6 @@ class TestFindtype(unittest.TestCase):
                 self.assertEqual(ftype, "TIFF")
 
     def test_gif89a(self):
-        self.assertEqual(1,0)
         for gif in os.listdir("images"):
             if gif.endswith(".gif"):
                 ftype = filemagic.findtype(os.path.join("images", gif))
