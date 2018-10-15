@@ -1,0 +1,6 @@
+language: python3
+jobs:
+  include:
+    - stage: test
+      before_script: cd oving7
+      script: python3 -m unittest test_findtype.TestFindtype
